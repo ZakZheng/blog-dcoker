@@ -1,4 +1,4 @@
-FROM node
+FROM node:11-alpine
 
 LABEL maintainer="Zak Zheng <1258645603@qq.com>"
 
@@ -13,7 +13,8 @@ WORKDIR /app
 RUN npm config set registry https://registry.npm.taobao.org && \
     npm install yarn -g && \
     yarn config set registry https://registry.npm.taobao.org && \
+    yarn global add pm2 && \
     yarn && \
     yarn build
 
-CMD ["yarn", "start"]
+CMD ["pm2", "start", 'yarn', '--', 'start']
