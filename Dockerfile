@@ -14,8 +14,6 @@ WORKDIR /app
 #如果在中国环境下构建请把下面注释打开
 # npm config set registry https://registry.npm.taobao.org && \
 RUN npm install && \
-    npm build && \
-    npm start
-
-# Expose the app port
-EXPOSE 3000
+    npm build
+    
+CMD ["npm", "start"]
