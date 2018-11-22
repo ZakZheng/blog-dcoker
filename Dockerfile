@@ -2,8 +2,8 @@ FROM node
 
 LABEL maintainer="Zak Zheng <1258645603@qq.com>"
 
-# ENV NODE_ENV=production
-# ENV HOST 0.0.0.0
+ENV NODE_ENV=production
+ENV HOST 0.0.0.0
 
 RUN mkdir -p /app
 COPY . /app

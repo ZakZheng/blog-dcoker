@@ -9,8 +9,6 @@ services:
       - HOST=0.0.0.0
     volumes:
       - ./:/home/node/app
-    # expose:
-      # - "3000"
     ports:
       - "3000:3000"
     command: [sh, -c, "npm run build && npm run start"]
