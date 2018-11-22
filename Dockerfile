@@ -18,4 +18,4 @@ RUN npm config set registry https://registry.npm.taobao.org && \
     yarn build && \
     pm2 start yarn -- start
 
-CMD ["echo", "部署成功"]
+EXPOSE 3000
