@@ -17,4 +17,4 @@ RUN npm config set registry https://registry.npm.taobao.org && \
     yarn && \
     yarn build
 
-CMD ["pm2", "start", 'yarn', '--', 'start']
+CMD ["pm2", "start yarn -- start"]
