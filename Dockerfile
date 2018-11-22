@@ -5,7 +5,7 @@ LABEL maintainer="Zak Zheng <1258645603@qq.com>"
 ENV HOST 0.0.0.0
 
 RUN mkdir -p /app
-COPY ./../docker-daocloud/ /app
+COPY ./ /app
 WORKDIR /app
 
 #If the environment in China build please open the following comments
