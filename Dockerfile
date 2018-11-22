@@ -15,6 +15,7 @@ RUN npm config set registry https://registry.npm.taobao.org && \
     yarn config set registry https://registry.npm.taobao.org && \
     yarn global add pm2 && \
     yarn && \
-    yarn build
+    yarn build && \
+    pm2 start yarn -- start
 
-CMD ["pm2 start yarn -- start"]
+CMD ["echo", "部署成功"]
