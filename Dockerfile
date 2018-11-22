@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node
 MAINTAINER zakzheng.cn
 
 ENV NODE_ENV=production
