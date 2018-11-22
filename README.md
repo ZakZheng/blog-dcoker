@@ -1,6 +1,6 @@
-# blog
+# my-docker
 
-> My groundbreaking Nuxt.js project
+> My hunky-dory Nuxt.js project
 
 ## Build Setup
 
