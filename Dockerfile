@@ -15,8 +15,9 @@ RUN npm config set registry https://registry.npm.taobao.org && \
     yarn config set registry https://registry.npm.taobao.org && \
     yarn global add pm2 && \
     yarn && \
-    yarn build
+    yarn build && \
+    pm2-docker start yarn -- start
 
 EXPOSE 3000
 
-CMD [ "pm2-docker start yarn -- start --no-daemon" ]
+CMD [ "echo", "0.0.0.0:3000" ]
